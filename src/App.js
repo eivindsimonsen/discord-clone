@@ -2,13 +2,13 @@ import "./sass/style.scss";
 import Index from "./components/index/Index";
 /* import Nav from "./components/layout/Nav"; */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Download from "./components/download/Download";
-import Nitro from "./components/nitro/Nitro";
-import Safety from "./components/safety/Safety";
-import Support from "./components/support/Support";
-import Blog from "./components/blog/Blog";
-import Careers from "./components/careers/Careers";
-import Login from "./components/login/Login";
+import Download from "./components/pages/download/Download";
+import Nitro from "./components/pages/support/nitro/Nitro";
+import Safety from "./components/pages/safety/Safety";
+import Support from "./components/pages/support/Support";
+import Blog from "./components/pages/blog/Blog";
+import Careers from "./components/pages/careers/Careers";
+import Login from "./components/pages/login/Login";
 
 function App() {
   return (

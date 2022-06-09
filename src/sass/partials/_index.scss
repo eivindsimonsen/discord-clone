@@ -1,10 +1,103 @@
 header {
   background-color: $background-color;
-  height: 50vh;
+  height: 67vh;
+  background-image: url(../../images/header-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: $twokdesktop) {
+    height: 70vh;
+  }
 }
 
 h1 {
   text-align: center;
   color: $white;
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: clamp(34px, 5vw, 70px);
+  margin: 100px 0px 0px 0px;
+
+  @media (min-width: $twokdesktop) {
+    margin: 140px 0px 0px 0px;
+  }
+}
+
+.header-container {
+  max-width: 750px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    text-align: center;
+    line-height: 1.9;
+    color: $white;
+    /* font-size: 1.2rem; */
+    font-size: clamp(1.1rem, 5vw, 1.2rem);
+  }
+
+  &__buttons {
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > button {
+      margin: 0px 10px;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        height: 21px;
+      }
+    }
+  }
+
+  &__images img {
+    position: absolute;
+    bottom: 0px;
+    width: 630px;
+
+    @media (min-width: $desktop) {
+      width: 655px;
+    }
+
+    @media (min-width: $twokdesktop) {
+      width: 960px;
+    }
+  }
+}
+
+.headerImageLeft {
+  left: -70px;
+}
+
+.headerImageRight {
+  right: -70px;
+}
+
+.download-btn {
+  background-color: $white;
+  transition: color 0.2s;
+  &:hover {
+    color: $brand;
+    transition: color 0.2s;
+  }
+}
+
+.open-app-btn {
+  background-color: $not-quite-black;
+  color: $white;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: #36393f;
+    transition: background-color 0.2s;
+  }
 }

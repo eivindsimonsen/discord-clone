@@ -1,12 +1,10 @@
 import Nav from "./Nav";
 
-function Header() {
+function Header({ content }) {
   return (
     <header>
       <Nav />
-      <div>
-        <h1>Imagine a place...</h1>
-      </div>
+      <div className="header-content">{content}</div>
     </header>
   );
 }

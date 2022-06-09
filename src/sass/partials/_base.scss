@@ -9,3 +9,17 @@ h1 {
   font-weight: $primary-font-weight-headline;
   font-size: 3.5rem;
 }
+
+.btn {
+  padding: 15px 40px;
+  width: 320px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+
+  &:hover {
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+  }
+}

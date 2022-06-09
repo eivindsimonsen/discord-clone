@@ -1,10 +1,10 @@
 import Header from "../layout/Header";
-/* import Nav from "../layout/Nav"; */
+import Intro from "./Intro";
 
 function Index() {
   return (
     <>
-      <Header />
+      <Header content={<Intro />} />
     </>
   );
 }
