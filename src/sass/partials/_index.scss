@@ -101,6 +101,11 @@
   max-width: 1200px;
   margin: 0px auto;
   padding: 130px;
+  flex-direction: column;
+
+  @media (min-width: 967px) {
+    flex-direction: row;
+  }
 
   &__reverse {
     flex-direction: row-reverse;
@@ -115,11 +120,29 @@
       text-transform: uppercase;
       font-weight: $primary-font-weight-headline;
     }
+
+    & img {
+      height: $mobile-heigth;
+      width: 474px;
+      margin: 0px auto;
+
+      @media (min-width: 1320px) {
+        width: auto;
+      }
+    }
   }
 
   &__texts {
     margin: 0px 34px;
     color: $not-quite-black;
+  }
+
+  & img {
+    height: $mobile-heigth;
+
+    @media (min-width: 1320px) {
+      height: $desktop-height;
+    }
   }
 }
 

@@ -1,7 +1,6 @@
 # Discord website CLONE
 
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> This project was ment for react practice alone, working with components aswell as challenging myself in creating a replica of their home page using sass. The clone is yet to be responsive. No live demo is provided because of browser security.
 
 ## Table of Contents
 
@@ -9,35 +8,28 @@
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Setup](#setup)
-- [Usage](#usage)
 - [Project Status](#project-status)
 - [Room for Improvement](#room-for-improvement)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
-<!-- * [License](#license) -->
 
 ## General Information
 
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- If you want to see the clone in action, download the project and run:
+  `npm run start`
+
+- The main focus for the code is to test my skills and improve. I was wondering if I would have the skills to code the design of discords of website. I believe I managed to fully design and code the home page, however my react skills are not yet mastered.
 
 ## Technologies Used
 
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- React - version ^18.1.0
+- Sass - version ^1.52.2
 
 ## Features
 
 List the ready features here:
 
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Home page clone of the original discord website
 
 ## Screenshots
 
@@ -45,22 +37,11 @@ List the ready features here:
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
-## Setup
-
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-## Usage
-
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
 ## Project Status
 
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in-progess_ / _complete_ /
+
+- The project is considered finished, as the vast size of the website is to much work for me to complete now by myself. I am happy with the home page being created, however it is not fully responsive. I will move on to smaller projects. Might come back at some point to finish the responsiveness of the home page.
 
 ## Room for Improvement
 
@@ -68,28 +49,13 @@ Include areas you believe need improvement / could be improved. Also add TODOs f
 
 Room for improvement:
 
-- Improvement to be done 1
-- Improvement to be done 2
+- Making the home page fully responsive
+- Better understanding of components and how to use/reuse them.
 
 To do:
 
-- Feature to be added 1
-- Feature to be added 2
-
-## Acknowledgements
-
-Give credit here.
-
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Make homepage responsive
 
 ## Contact
 
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@eivindsimonsen](https://www.easimonsen.com/) - feel free to contact me!
