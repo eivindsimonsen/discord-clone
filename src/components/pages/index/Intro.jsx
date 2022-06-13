@@ -1,7 +1,7 @@
-import Heading from "../layout/Heading";
-import imageLeft from "../../images/header-image-left.png";
-import imageRight from "../../images/header-image-right.png";
-import downloadIcon from "../../images/download-icon.png";
+import Heading from "../../common/Heading";
+import imageLeft from "../../../images/header-image-left.png";
+import imageRight from "../../../images/header-image-right.png";
+import downloadIcon from "../../../images/download-icon.png";
 
 function Intro() {
   return (

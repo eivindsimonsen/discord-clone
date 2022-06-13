@@ -1,11 +1,4 @@
 nav {
-  display: grid;
-  width: 100%;
-  max-width: 1260px;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 20px;
-  margin: 0px auto;
-
   & ul {
     list-style: none;
     padding: 0px;
@@ -25,15 +18,26 @@ nav {
   }
 }
 
+.header-nav {
+  display: grid;
+  width: 100%;
+  max-width: 1260px;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 20px;
+  margin: 0px auto;
+}
+
 .nav-brand,
 .nav-links,
-.nav-login {
+.nav-login,
+.nav-sign-up {
   display: flex;
   align-items: center;
   grid-column: span 4;
 }
 
-.nav-login {
+.nav-login,
+.nav-sign-up {
   flex-flow: row-reverse;
 }
 
@@ -52,4 +56,59 @@ nav {
     box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
     transition: color, box-shadow 0.5s;
   }
+}
+
+.footer-nav {
+  display: grid;
+  width: 100%;
+  max-width: 1260px;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 20px;
+  margin: 0px auto;
+
+  &__heading {
+    text-transform: uppercase;
+  }
+
+  &__lists {
+    padding: 25px 0px;
+    line-height: 2.5;
+    font-size: 0.9rem;
+  }
+
+  &__bottom {
+    display: grid;
+    max-width: 1260px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px auto;
+    padding: 20px 0px 80px 0px;
+
+    & > * {
+      grid-column: span 1;
+    }
+  }
+}
+
+.nav-sign-up a {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: $brand;
+  color: $white;
+  font-weight: $primary-font-weight-regular;
+  transition: color, box-shadow 0.5s;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $brand-hover;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    transition: color, box-shadow 0.5s;
+  }
+}
+
+hr {
+  max-width: 1260px;
+  border-color: $brand;
 }

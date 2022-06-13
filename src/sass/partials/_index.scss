@@ -1,28 +1,4 @@
-header {
-  background-color: $background-color;
-  height: 67vh;
-  background-image: url(../../images/header-background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-
-  @media (min-width: $twokdesktop) {
-    height: 70vh;
-  }
-}
-
-h1 {
-  text-align: center;
-  color: $white;
-  /* font-size: 70px; */
-  font-size: clamp(34px, 5vw, 70px);
-  margin: 100px 0px 0px 0px;
-
-  @media (min-width: $twokdesktop) {
-    margin: 140px 0px 0px 0px;
-  }
-}
+//Header intro stylings
 
 .header-container {
   max-width: 750px;
@@ -56,6 +32,7 @@ h1 {
 
       & img {
         height: 21px;
+        margin-right: 8px;
       }
     }
   }
@@ -63,24 +40,24 @@ h1 {
   &__images img {
     position: absolute;
     bottom: 0px;
-    width: 630px;
+    width: 330px;
 
     @media (min-width: $desktop) {
-      width: 655px;
+      width: 555px;
     }
 
     @media (min-width: $twokdesktop) {
-      width: 960px;
+      width: 760px;
     }
   }
 }
 
 .headerImageLeft {
-  left: -70px;
+  left: 0px;
 }
 
 .headerImageRight {
-  right: -70px;
+  right: 0px;
 }
 
 .download-btn {
@@ -88,6 +65,16 @@ h1 {
   transition: color 0.2s;
   &:hover {
     color: $brand;
+    transition: color 0.2s;
+  }
+}
+
+.download-btn-blue {
+  background-color: $brand;
+  transition: color 0.2s;
+  color: $white;
+  &:hover {
+    background-color: $brand-hover;
     transition: color 0.2s;
   }
 }
@@ -100,4 +87,46 @@ h1 {
     background-color: #36393f;
     transition: background-color 0.2s;
   }
+}
+
+// Index content stylings
+
+.home-content-background {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.home-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 130px;
+
+  &__reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__column-reverse {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    & h2 {
+      color: $not-quite-black;
+      text-transform: uppercase;
+      font-weight: $primary-font-weight-headline;
+    }
+  }
+
+  &__texts {
+    margin: 0px 34px;
+    color: $not-quite-black;
+  }
+}
+
+.start-journey-background {
+  background-image: url(../../images/header-background-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 5px;
 }

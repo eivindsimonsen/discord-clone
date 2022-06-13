@@ -1,5 +1,5 @@
 import "./sass/style.scss";
-import Index from "./components/index/Index";
+import Index from "./components/pages/index/Index";
 /* import Nav from "./components/layout/Nav"; */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Download from "./components/pages/download/Download";

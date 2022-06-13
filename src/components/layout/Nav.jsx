@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav>
+    <nav className="header-nav">
       <div className="brand nav-brand">
         <NavLink to="#" href="/">
           <img src={brand} alt="Discords brand" />
